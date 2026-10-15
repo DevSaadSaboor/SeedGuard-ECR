@@ -1,0 +1,24 @@
+# Pinned dependencies for the official ECR code (Python 3.8, Linux, NVIDIA GPU).
+# torch, torch-scatter and torch-sparse need special wheel indexes: install them with setup_env.sh, not this file.
+# Versions in the authors' README: transformers 4.15.0, accelerate 0.8.0, pyg 2.0.1. The rest are pinned
+# to releases from the same era that support Python 3.8, so every machine gets the same install.
+
+torch-geometric==2.0.1
+transformers==4.15.0
+tokenizers==0.10.3
+accelerate==0.8.0
+numpy==1.21.6
+scipy==1.10.1
+pandas==1.5.3
+scikit-learn==1.0.2
+nltk==3.7
+einops==0.4.1
+loguru==0.6.0
+tqdm==4.64.1
+wandb==0.13.10
+requests==2.28.2
+gdown==5.2.0  # 4.x can no longer download large files from Google Drive
+
+# only needed for imdb_review_crawl.py
+beautifulsoup4==4.11.1
+cinemagoer==2022.12.27
